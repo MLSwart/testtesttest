@@ -32,7 +32,7 @@ puts 'Oops, that can\'t be right...' + monthname[monthnum] + ' doesn\'t have tha
 puts 'On which day of ' + monthname[monthnum] + ' were you born?'
 day = gets.chomp
 end
-while (month.to_i <8) && month.to_i%2 != 0 && day.to_i > 31 || (month.to_i >8) && month.to_i%2 == 0 && day.to_i > 31
+while (month.to_i <8) && month.to_i%2 != 0 && day.to_i > 31 || (month.to_i >=8) && month.to_i%2 == 0 && day.to_i > 31
 puts 'Oops, that can\'t be right...' + monthname[monthnum] + ' doesn\'t have that many days.' 
 puts 'On which day of ' + monthname[monthnum] + ' were you born?'
 day = gets.chomp
